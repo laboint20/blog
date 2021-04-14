@@ -1,0 +1,98 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+#site-header, #site-footer, #site-nav {
+	margin: 5px;
+	padding: 5px;
+	background: lightgray;
+}
+/* #main: flex container multi-riga */
+#main {
+	display: flex;
+	flex-flow: row wrap;
+}
+/* content: flex item di indice 3 */
+#main section.content {
+	flex: 3;
+	order: 1;
+	min-width: 20em;
+	min-height: 25em;
+	margin: 5px;
+	padding: 15px;
+	background: lightgrey;
+}
+/* sidebar: flex item di indice 1 */
+#main aside.sidebar {
+	flex: 1;
+	order: 2;
+	min-width: 12em;
+	min-height: 8em;
+	margin: 5px;
+	padding: 15px;
+	background: lightgrey;
+}
+/* stile per i titoli */
+#site-header h1 {
+	text-transform: uppercase;
+	margin: 5px;
+}
+/* stile per le barre di navigazione */
+#site-nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 5px 0;
+}
+#site-nav ul li {
+	display: inline-block;
+	margin-right: 10px;
+	padding: 5px;
+}
+#site-nav ul li a {
+	font-weight: bold;
+	padding: 5px;
+	color: grey;
+}
+#site-nav ul li a.active {
+	background: grey;
+	color: white;
+	border-radius: 3px;
+}
+/* stile dei contenuti */
+#main section.content article {
+	margin-bottom: 25px;
+	padding-bottom: 25px;
+	border-bottom: 1px dashed grey;
+}
+#main section.content article p {
+	margin-bottom: 2px;
+	text-align: justify;
+}
+#main section.content article footer a {
+	font-size: small;
+}
+/* stile delle sidebar */
+#main aside.sidebar h2 {
+	margin: 0 0 15px 0;
+}
+#profilepic {
+	margin: 0 0 15px 0;
+}
+#profilepic img {
+	width: 80%;
+	max-width: 200px;
+}
+#profilepic figcaption {
+	font-style: italic;
+	margin-top: 2px;
+}
+/* stile dei link */
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/* spigoli dei contenitori arrotondati */
+#site-header, #site-footer, #site-nav, .content, .sidebar {
+	border-radius: 5px;
+}
